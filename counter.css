@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(124, 202, 253);
+}
+.container{
+    color: black;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);  
+    position: absolute;
+}
+.heading{
+    font-size: 30px;
+}
+
+p{
+    border: 0;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    padding: 14px 20px;
+    display: block;
+    outline: none;
+    
+}
+.button .reset{
+    background-color: rgb(59, 54, 54);
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: grey;
+}
+.button #add{
+    background-color: rgb(221, 55, 55);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: rgb(240, 85, 85);
+}
+.button #sub{
+    background-color: rgb(11, 175, 11);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: rgb(18, 184, 18);
