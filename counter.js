@@ -6,14 +6,15 @@ var counter = document.getElementById("count");
 
 // Function to increase count by one
 $(plusButton).on("click", function() {
-    counter++;
    // Part to disable the button after 10
     if(counter < 11){
+       counter++;
        plusButton.removeAttribute("disabled");
     }
     else{
         plusButton.attributes('disabled', "disabled");
     }
+    
     //Part to check counter is even or odd
     if(counter % 2 == 0){
         $("body").css("background-color", "rgb(124, 202, 253)");
@@ -28,12 +29,13 @@ $(plusButton).on("click", function() {
  
 // Function to reduce count by one
 $(minusButton).on("click", function() {
-    counter--;
+    
     // Part to disable the button after 0
     if(counter < 0){
         minusButton.attribute("disabled", "disabled");
     }
     else{
+        counter--;
         minusButton.removeAttribute("disabled");
     }
     //Part to check counter is even or odd
