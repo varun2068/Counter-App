@@ -7,7 +7,7 @@ var counter = document.getElementById("count");
 // Function to increase count by one
 $(plusButton).on("click", function() {
    // Part to disable the button after 10
-    if(counter < 11){
+    if(counter < 10){
        counter++;
        plusButton.removeAttribute("disabled");
     }
@@ -31,7 +31,7 @@ $(plusButton).on("click", function() {
 $(minusButton).on("click", function() {
     
     // Part to disable the button after 0
-    if(counter < 0){
+    if(counter < 1){
         minusButton.attribute("disabled", "disabled");
     }
     else{
@@ -53,4 +53,5 @@ $(minusButton).on("click", function() {
 $(reset).on("click", function(){
     counter = 0;
     $('p').text(counter);
+    $('body').css("background-color", "rgb(124, 202, 253)");
 })
